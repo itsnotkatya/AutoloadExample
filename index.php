@@ -1,5 +1,6 @@
 <?php
 
+$namespaces = $configuration['autoload']['psr-4'];
 
 function customAutoload(string $classname)
 {
@@ -9,7 +10,7 @@ function customAutoload(string $classname)
 }
 spl_autoload_register('customAutoload');
 
-spl_autoload_register(function ($classname) {     #added autoload function
+spl_autoload_register(function (string $classname) use ($namespaces) {     #added autoload function
     $path = __DIR__ . $classname . '.php';
     if (file_exists($path)) {
         require_once $path;
