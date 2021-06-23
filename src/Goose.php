@@ -1,4 +1,5 @@
 <?php
+namespace Goose\Animal;
 
 class Goose extends Animal implements FlyingAnimal
 {
