@@ -1,5 +1,7 @@
 <?php
 
+namespace Dog\Animal;
+
 //множественное наследование через трейты/миксины/примеси+интерфейсы
 class Dog extends Animal
 {
