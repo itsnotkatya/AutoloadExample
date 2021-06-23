@@ -1,5 +1,7 @@
 <?php
 
+namespace FlyingAnimal\Animal;
+
 interface FlyingAnimal
 {
     public const TYPE = "flyer";
