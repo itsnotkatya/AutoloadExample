@@ -1,5 +1,7 @@
 <?php
 
+namespace Animal;
+
 class Animal {
     private int $age;
     protected int $b;
